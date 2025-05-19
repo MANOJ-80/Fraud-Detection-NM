@@ -88,30 +88,6 @@ This system addresses credit card fraud (estimated $32+ billion annual losses) u
 
 ---
 
-## Acknowledgments
-
-This project builds upon the work of:
-
-1. **Dataset Providers**:  
-   [Kaggle Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)  
-   (European cardholders, 2013 transactions)
-
-2. **Machine Learning Libraries**:  
-   - Scikit-learn development team  
-   - XGBoost/LightGBM/CatBoost contributors  
-   - Imbalanced-learn maintainers  
-
-3. **Explainability Tools**:  
-   SHAP (Scott Lundberg, Microsoft Research)
-
-4. **Visualization Tools**:  
-   Matplotlib, Seaborn, and Plotly communities
-
----
-
-## License
-
-MIT License - For academic and research purposes only. Not certified for production financial systems.
 ## 📌 Acknowledgments
 
 - [Kaggle Credit Card Fraud Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud)
@@ -122,3 +98,8 @@ MIT License - For academic and research purposes only. Not certified for product
   - [LightGBM](https://lightgbm.readthedocs.io/)
   - [CatBoost](https://catboost.ai/)
 - [SHAP](https://github.com/shap/shap) by Scott Lundberg
+
+---
+## License
+
+MIT License - For academic and research purposes only. Not certified for production financial systems.
