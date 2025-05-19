@@ -4,12 +4,12 @@ import joblib
 import numpy as np
 
 # Load models
-rf_model = joblib.load('random_forest_model.pkl')
-smote_rf_model = joblib.load('smote_random_forest_model.pkl')
-xgb_model = joblib.load('xgboost_model.pkl')
-lgbm_model = joblib.load('lightgbm_model.pkl')
-cat_model = joblib.load('catboost_model.pkl')
-ada_model = joblib.load('adaboost_model.pkl')
+rf_model = joblib.load('./models/random_forest_model.pkl')
+smote_rf_model = joblib.load('./models/smote_random_forest_model.pkl')
+xgb_model = joblib.load('./models/xgboost_model.pkl')
+lgbm_model = joblib.load('./models/lightgbm_model.pkl')
+cat_model = joblib.load('./models/catboost_model.pkl')
+ada_model = joblib.load('./models/adaboost_model.pkl')
 
 #  Title
 st.title("💳 Credit Card Fraud Detection")
