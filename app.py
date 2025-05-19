@@ -54,7 +54,7 @@ if st.button("🚀 Predict"):
     st.session_state.history.append({
         'Model': model_choice,
         'Prediction': 'Fraud' if prediction[0]==1 else 'Not Fraud',
-        'Fraud Probability (%)': round(prediction_proba[0][1]*100, 2)
+        'Fraud Probability (%)': round(prediction_proba[0][1]*100, 2)   
     })
 
 #  Show history
