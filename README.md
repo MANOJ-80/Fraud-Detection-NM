@@ -102,4 +102,4 @@ This system addresses credit card fraud (estimated $32+ billion annual losses) u
 ---
 ## License
 
-MIT License - For academic and research purposes only. Not certified for production financial systems.
+[MIT License](LICENSE) - For academic and research purposes only. Not certified for production financial systems.
