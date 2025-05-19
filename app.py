@@ -3,7 +3,6 @@ import pandas as pd
 import joblib
 import numpy as np
 
-# Load models
 rf_model = joblib.load('./models/random_forest_model.pkl')
 smote_rf_model = joblib.load('./models/smote_random_forest_model.pkl')
 xgb_model = joblib.load('./models/xgboost_model.pkl')
@@ -11,14 +10,12 @@ lgbm_model = joblib.load('./models/lightgbm_model.pkl')
 cat_model = joblib.load('./models/catboost_model.pkl')
 ada_model = joblib.load('./models/adaboost_model.pkl')
 
-#  Title
+
 st.title("💳 Credit Card Fraud Detection")
 
-# Sidebar model selection
 model_choice = st.sidebar.selectbox("Select model:", 
     ('RandomForest', 'SMOTE RandomForest', 'XGBoost', 'LightGBM', 'CatBoost', 'AdaBoost'))
 
-# Transaction input fields
 def get_user_input():
     inputs = {}
     for i in range(1, 29):
@@ -31,7 +28,6 @@ input_df['Time'] = 0
 expected_cols = ['Time'] + [f'V{i}' for i in range(1,29)] + ['Amount']
 input_df = input_df[expected_cols]
 
-# Prediction button
 if st.button("🚀 Predict"):
 
     model = {
@@ -57,7 +53,6 @@ if st.button("🚀 Predict"):
         'Fraud Probability (%)': round(prediction_proba[0][1]*100, 2)   
     })
 
-#  Show history
 if 'history' in st.session_state and st.session_state.history:
     st.write("### 📊 Prediction History")
     st.dataframe(pd.DataFrame(st.session_state.history))
